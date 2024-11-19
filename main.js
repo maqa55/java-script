@@ -195,3 +195,19 @@
 // // let d = Object.entries(c)
 
 // console.log(cem);
+
+
+// ------------------------------DOM BOM----------------------------------------------------------
+
+// const btn = document.querySelector(".btn")
+
+// btn.addEventListener('click',function () {
+//     this.nextElementSibling.classList.toggle("mr")
+// })
+const start = document.querySelector(".start")
+
+start.addEventListener('click',function () {
+    this.nextElementSibling.classList.toggle("car")
+    this.innerHTML='<p>Qazandiniz</p>'
+})
+

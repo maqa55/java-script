@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.start {
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+  transition: 1s;
+}
+img.car {
+  display: block;
+  margin-left: 1000px;
+}/*# sourceMappingURL=i.css.map */
