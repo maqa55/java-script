@@ -204,10 +204,50 @@
 // btn.addEventListener('click',function () {
 //     this.nextElementSibling.classList.toggle("mr")
 // })
-const start = document.querySelector(".start")
+// const start = document.querySelector(".start")
 
-start.addEventListener('click',function () {
-    this.nextElementSibling.classList.toggle("car")
-    this.innerHTML='<p>Qazandiniz</p>'
+// start.addEventListener('click',function () {
+//     this.nextElementSibling.classList.toggle("car")
+//     this.innerHTML='<p>Qazandiniz</p>'
+// })
+const wo = new Audio("woooooaah-199849.mp3")
+const sound = new Audio("ambulance-in-city-traffic-139030.mp3")
+const person = document.querySelector(".person");
+const tibb = document.querySelector(".tibb")
+const people = document.querySelector(".people")
+const p = document.querySelector(".p")
+
+person.addEventListener('click', function () {
+    this.classList.add("a")
+    setTimeout(() => {
+        person.classList.add("b")
+        wo.play()
+    }, 2000);
+    setTimeout(() => {
+        tibb.classList.add("c")
+        sound.play()
+    }, 4000);
+    setTimeout(() => {
+        sound.pause()
+        people.classList.add("man")
+    }, 8000);
+    setTimeout(() => {
+        people.classList.add("m");
+        person.classList.add("g")
+    }, 11000);
+    setTimeout(() => {
+        person.classList.remove("a")
+        people.classList.remove("man")
+        person.classList.add("hidden");
+    }, 13000);
+    setTimeout(() => {
+        tibb.classList.add("ambulance")
+        sound.play()
+    }, 15000);
+    setTimeout(() => {
+        sound.pause()
+        p.classList.add("the")
+    }, 19000);
+   
 })
 
