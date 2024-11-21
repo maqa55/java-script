@@ -216,6 +216,7 @@ const person = document.querySelector(".person");
 const tibb = document.querySelector(".tibb")
 const people = document.querySelector(".people")
 const p = document.querySelector(".p")
+const yol =document.querySelector(".yol")
 
 person.addEventListener('click', function () {
     this.classList.add("a")
@@ -247,6 +248,7 @@ person.addEventListener('click', function () {
     setTimeout(() => {
         sound.pause()
         p.classList.add("the")
+        yol.classList.add("hid")
     }, 19000);
    
 })
